@@ -6,17 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		18D993992E9265B900EEB5DF /* SpeedTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D993962E9265B900EEB5DF /* SpeedTestApp.swift */; };
+		18D9939A2E9265B900EEB5DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D993942E9265B900EEB5DF /* Assets.xcassets */; };
+		18D993A12E92664400EEB5DF /* SpeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D993A02E92664400EEB5DF /* SpeedService.swift */; };
+		18D993A52E92680900EEB5DF /* SpeedTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D993A42E92680900EEB5DF /* SpeedTestView.swift */; };
+		18D993A72E92681B00EEB5DF /* SpeedTestVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D993A62E92681B00EEB5DF /* SpeedTestVM.swift */; };
+		18D993A92E928A7E00EEB5DF /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D993A82E928A7E00EEB5DF /* AppConfig.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		18D993862E9265A100EEB5DF /* SpeedTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D993942E9265B900EEB5DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18D993962E9265B900EEB5DF /* SpeedTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestApp.swift; sourceTree = "<group>"; };
+		18D9939B2E9265DA00EEB5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D993A02E92664400EEB5DF /* SpeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedService.swift; sourceTree = "<group>"; };
+		18D993A42E92680900EEB5DF /* SpeedTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestView.swift; sourceTree = "<group>"; };
+		18D993A62E92681B00EEB5DF /* SpeedTestVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestVM.swift; sourceTree = "<group>"; };
+		18D993A82E928A7E00EEB5DF /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		18D993882E9265A100EEB5DF /* SpeedTest */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SpeedTest;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		18D993832E9265A100EEB5DF /* Frameworks */ = {
@@ -32,7 +40,7 @@
 		18D9937D2E9265A100EEB5DF = {
 			isa = PBXGroup;
 			children = (
-				18D993882E9265A100EEB5DF /* SpeedTest */,
+				18D993972E9265B900EEB5DF /* SpeedTest */,
 				18D993872E9265A100EEB5DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +51,68 @@
 				18D993862E9265A100EEB5DF /* SpeedTest.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		18D993972E9265B900EEB5DF /* SpeedTest */ = {
+			isa = PBXGroup;
+			children = (
+				18D9939B2E9265DA00EEB5DF /* Info.plist */,
+				18D993A22E92668E00EEB5DF /* App */,
+				18D9939D2E92660400EEB5DF /* Service */,
+				18D9939E2E92660800EEB5DF /* UI */,
+				18D9939C2E9265FF00EEB5DF /* Resources */,
+			);
+			path = SpeedTest;
+			sourceTree = "<group>";
+		};
+		18D9939C2E9265FF00EEB5DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18D993942E9265B900EEB5DF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18D9939D2E92660400EEB5DF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				18D9939F2E92662900EEB5DF /* Speed */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		18D9939E2E92660800EEB5DF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				18D993A32E9267CE00EEB5DF /* Speed */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		18D9939F2E92662900EEB5DF /* Speed */ = {
+			isa = PBXGroup;
+			children = (
+				18D993A02E92664400EEB5DF /* SpeedService.swift */,
+			);
+			path = Speed;
+			sourceTree = "<group>";
+		};
+		18D993A22E92668E00EEB5DF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				18D993962E9265B900EEB5DF /* SpeedTestApp.swift */,
+				18D993A82E928A7E00EEB5DF /* AppConfig.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		18D993A32E9267CE00EEB5DF /* Speed */ = {
+			isa = PBXGroup;
+			children = (
+				18D993A42E92680900EEB5DF /* SpeedTestView.swift */,
+				18D993A62E92681B00EEB5DF /* SpeedTestVM.swift */,
+			);
+			path = Speed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +129,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				18D993882E9265A100EEB5DF /* SpeedTest */,
 			);
 			name = SpeedTest;
 			packageProductDependencies = (
@@ -109,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D9939A2E9265B900EEB5DF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D993A12E92664400EEB5DF /* SpeedService.swift in Sources */,
+				18D993A92E928A7E00EEB5DF /* AppConfig.swift in Sources */,
+				18D993A72E92681B00EEB5DF /* SpeedTestVM.swift in Sources */,
+				18D993A52E92680900EEB5DF /* SpeedTestView.swift in Sources */,
+				18D993992E9265B900EEB5DF /* SpeedTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +327,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpeedTest/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -298,6 +372,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpeedTest/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

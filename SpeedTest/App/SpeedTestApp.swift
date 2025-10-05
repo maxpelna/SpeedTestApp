@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SpeedTestApp: App {
+    private let speedService: SpeedService = SpeedServiceImpl()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SpeedTestView(
+                viewModel: SpeedTestVM(speedService: speedService)
+            )
         }
     }
 }
